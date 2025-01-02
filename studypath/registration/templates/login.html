@@ -3,10 +3,28 @@
     Login
 {% endblock %}
 {% block content %}
-    <h1>Login</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
-    </form>
+    {# Left #}
+    <div class="left">
+        <h3>Welcome back to StudyPath</h3>
+        <p id="description">Access your learning, resources, and more.</p>
+
+        <form action="login" method="post">
+            <input type="number" name="studentID" placeholder="Enter your student ID">
+            <input type="password" name="password" placeholder="Enter your password">
+            <div class="forgot-password">
+            <a href="#" id="forgot_password"><span>Forgot password?</span></a>
+            </div>
+            <input type="submit" value="Log in">
+        </form>
+        <p id="signup">Don't have an account? <a href="register">Sign up</a></p>
+        <div class="footer">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term of Use</a>
+        </div>
+    </div>
+    {# Right #}
+    <div class="right">
+        <a href="#">Sign Up</a>
+        <a href="#">Contact Support</a>
+    </div>
 {% endblock %}

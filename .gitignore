@@ -1,5 +1,7 @@
 .venv
+/studypath/app/__pycache__
 /studypath/registration/__pycache__/
+/studypath/registration/migrations/
 /studypath/studypath/__pycache__/
-/studypath/migrations/
+/studypath/studypath/migrations/
 db.sqlite3

@@ -9,6 +9,7 @@
         <p id="description">Access your learning, resources, and more.</p>
 
         <form action="login" method="post">
+            {# {% csrf_token %} #}
             <input type="number" name="studentID" placeholder="Enter your student ID">
             <input type="password" name="password" placeholder="Enter your password">
             <div class="forgot-password">
@@ -24,7 +25,9 @@
     </div>
     {# Right #}
     <div class="right">
-        <a href="#">Sign Up</a>
-        <a href="#">Contact Support</a>
+        <div class="text">
+            <a href="register">Sign Up</a>
+            <a href="#">Contact Support</a>
+        </div>
     </div>
 {% endblock %}

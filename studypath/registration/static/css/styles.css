@@ -148,8 +148,21 @@ input::-webkit-inner-spin-button {
     background: url('/static/img/bsc.jpg') lightgray -409.449px 0px / 213.736% 100% no-repeat;
     width: 50%;
     height: 100vh;
-    display: inline-block;  
+    display: flex;  
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
+}
+
+.right > .text {
+    display: flex;
+    gap: 12px;
+}
+
+.right > .text > a {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }

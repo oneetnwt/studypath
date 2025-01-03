@@ -1,5 +1,5 @@
 .venv
-/studypath/app/__pycache__
+/studypath/app/__pycache__/
 /studypath/registration/__pycache__/
 /studypath/registration/migrations/
 /studypath/studypath/__pycache__/
